@@ -11,7 +11,7 @@ body { margin: 0; background: linear-gradient(180deg, #0a3d2b, #063d2b); color: 
 .container { max-width: 700px; margin: auto; padding: 20px; }
 .hero { text-align: center; padding: 40px 10px 30px; }
 
-.logo img { width: 180px; margin-bottom: 20px; }
+.logo img { width: 180px; margin-bottom: 20px; border-radius: 12px; }
 
 h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
 .gold { color: #d4af37; }
@@ -20,11 +20,11 @@ h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
 .story {
     background: #0b513b;
     border-radius: 25px;
-    padding: 30px;
+    padding: 32px;
     margin: 25px 0;
     border-left: 6px solid #d8c26a;
     font-size: 17.5px;
-    line-height: 1.8;
+    line-height: 1.85;
 }
 
 .rank { font-size: 23px; font-weight: bold; margin: 15px 0 25px; line-height: 1.3; }
@@ -41,7 +41,7 @@ h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
     font-weight: bold;
     text-decoration: none;
     font-size: 21px;
-    margin: 25px 0 10px;
+    margin: 25px 0 15px;
     box-shadow: 0 8px 15px rgba(37, 211, 102, 0.4);
 }
 
@@ -54,7 +54,7 @@ h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
 
 <section class="hero">
   <div style="text-align:center;margin-bottom:15px;">
-    <img src="assets/logo-istikmal.png" alt="Logo" style="width:180px;">
+    <img src="assets/logo-istikmal.png" alt="Istikmal Syariah" style="width:180px;">
   </div>
 
   <h1>BISNIS BERKAH<br><span class="gold">MENGANTARKAN<br>SAMPAI KE MEKAH</span></h1>
@@ -68,24 +68,27 @@ h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
 </section>
 
 <div class="story">
-  <h2 style="color:#d8c26a; text-align:center;">📖 Perjalanan Saya</h2>
+  <h2 style="color:#d8c26a; text-align:center;">📖 Kisah & Perjuangan Saya</h2>
   <p>
-    Saya ingin membanggakan diri bukan hanya karena sukses pribadi, 
-    tapi karena <strong>berhasil membawa banyak mitra sukses</strong> bersama di 3IReborn, 
-    khususnya di bawah naungan <strong>Nganggur Preneur Akademi</strong>.
+    Bukan sekadar ingin sukses sendiri. Saya ingin membanggakan diri karena 
+    <strong>berhasil membawa banyak mitra sukses</strong> bersama di 3IReborn, 
+    khususnya melalui <strong>Nganggur Preneur Akademi</strong>.
   </p>
   <p>
-    <strong>Misi Besar Saya:</strong><br>
+    Saya tahu betul rasanya susah. Saya pernah melihat banyak teman, saudara, 
+    bahkan orang-orang di usia senja yang kehilangan penghasilan setelah pensiun atau terkena PHK.
+  </p>
+  <p>
+    <strong>Misi Hidup Saya:</strong><br>
     Membantu para <strong>pensiunan, korban PHK, dan teman-teman usia tua</strong> 
-    untuk memiliki penghasilan tetap lagi di masa senja mereka.
+    untuk memiliki penghasilan tetap lagi, sehingga bisa hidup lebih tenang dan berkah.
   </p>
   <p>
-    Tidak gampang, tapi juga <strong>tidak sulit</strong>.<br>
-    Selama nafas masih ada di badan, dan PT AJ Central Asia masih mendukung penuh, 
-    <strong>InsyaAllah</strong> impian ini akan terwujud.
+    Tidak gampang, tapi juga <strong>tidak sulit</strong>. Selama nafas masih dikandung badan 
+    dan PT AJ Central Asia masih mendukung, <strong>InsyaAllah</strong> impian ini akan terwujud.
   </p>
   <p style="text-align:center; margin-top:25px; font-style:italic; color:#d8c26a;">
-    🙏🏻 Mari kita bangkit dan berjuang bersama.
+    🙏🏻 Mari kita bangkit dan berjuang bersama menuju keberkahan.
   </p>
 </div>
 
@@ -104,16 +107,15 @@ h1 { font-size: 42px; line-height: 1.1; margin: 15px 0; color: #fff; }
   <h2>Total kontribusi sekitar<br>Rp30.000.000</h2>
 </div>
 
+<!-- Tombol baru sesuai request -->
 <div class="card">
-  <h2>Ingin Bergabung?</h2>
-  <p>Silakan konsultasi langsung dengan saya:</p>
-  <div id="leaderName2" class="rank silver"></div>
-  <a id="waBtn2" class="btn">💬 Hubungi WhatsApp Saya</a>
+  <h2 style="text-align:center;">Ingin Tahu Bisnis yang Bisa Mengantarkan Sampai ke Mekah?</h2>
+  <a id="waBtn2" class="btn">💬 Ya, Saya Mau Tahu Lebih Lanjut</a>
 </div>
 
 <div class="footer">
   Powered by <b>3IReborn</b> • Nganggur Preneur Akademi<br><br>
-  Bukan Sekedar Menabung, Tapi Membangun Masa Depan
+  Bukan Sekedar Menabung, Tapi Membangun Masa Depan yang Berkah
 </div>
 
 </div>
@@ -126,23 +128,22 @@ function getQueryParam(param) {
 }
 
 const nama  = getQueryParam("nama")  || "Sugiarto Kurniawan";
-const wa    = getQueryParam("wa")    || "628xxxxxxxxxx";
+const wa    = getQueryParam("wa")    || "6285214853131";
 const title = getQueryParam("title") || "Silver Entrepreneur";
 
-const rankEmojis = { "Silver Entrepreneur": "🥈", "Gold Entrepreneur": "🥇", /* tambah lainnya */ };
+const rankEmojis = {
+    "Silver Entrepreneur": "🥈",
+    "Gold Entrepreneur": "🥇",
+    "Diamond Executive": "💎",
+    "Royal Executive": "👑"
+};
 const emoji = rankEmojis[title] || "🌟";
 
 const tampilNama = `${emoji} ${title} - ${nama}`;
 
 document.getElementById("leaderName").innerHTML = tampilNama;
-document.getElementById("leaderName2").innerHTML = tampilNama;
-
-const pesan = `Halo Kak ${tampilNama}, saya tertarik dengan misi membantu pensiunan & PHK di 3IReborn 🙏`;
-
-const waLink = `https://wa.me/${wa}?text=${encodeURIComponent(pesan)}`;
-
-document.getElementById("waBtn1").href = waLink;
-document.getElementById("waBtn2").href = waLink;
+document.getElementById("waBtn1").href = `https://wa.me/${wa}?text=${encodeURIComponent("Halo Kak " + tampilNama + ", saya ingin konsultasi Istikmal Syariah 🙏")}`;
+document.getElementById("waBtn2").href = `https://wa.me/${wa}?text=${encodeURIComponent("Halo Kak " + tampilNama + ", saya ingin tahu bisnis yang bisa mengantarkan sampai ke Mekah 🙏")}`;
 </script>
 </body>
 </html>
