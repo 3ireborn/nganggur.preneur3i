@@ -7,65 +7,89 @@
 
 <style>
 * { box-sizing: border-box; font-family: Arial, sans-serif; }
-body { margin:0; background: linear-gradient(180deg, #0a2f2a, #041f1a); color: white; }
-.container { max-width: 720px; margin: auto; padding: 15px; }
-
-.hero img, .section img { 
-    width: 100%; 
-    max-width: 420px; 
-    border-radius: 20px; 
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7); 
+body { 
+    margin:0; 
+    background: linear-gradient(180deg, #0a2f2a, #041f1a); 
+    color: white; 
+    line-height: 1.6;
 }
+.container { max-width: 720px; margin: auto; padding: 20px; }
+
+h1 { font-size: 42px; line-height: 1.1; margin: 20px 0 10px; text-align:center; }
+.tagline { font-size: 23px; color: #ffd700; font-weight: bold; text-align:center; }
+
+.section { 
+    background: #0b513b; 
+    border-radius: 20px; 
+    padding: 25px; 
+    margin: 25px 0; 
+}
+
+.btn {
+    display: block;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 30px 0;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+}
+
+.center { text-align: center; }
 </style>
 </head>
 <body>
 
 <div class="container">
 
-  <!-- LOGO NPA -->
-  <div style="text-align:center; margin:20px 0;">
-    <img src="assets/npa.png" alt="NPA" onerror="this.style.display='none';">
+  <div class="center" style="margin:20px 0;">
+    <h1>TUA ITU PASTI!</h1>
+    <p class="tagline">PUNYA PENGHASILAN SAMPAI TUA ITU TIDAK PASTI</p>
   </div>
 
-  <!-- HERO -->
-  <div style="text-align:center;">
-    <img src="assets/pakde.png" alt="Sugiarto Kurniawan" onerror="this.src='https://via.placeholder.com/400x300/0b513b/ffffff?text=PakD+Sugiarto';">
-    <h1 style="font-size:42px; margin:20px 0 8px;">TUA ITU PASTI!</h1>
-    <p style="font-size:24px; color:#ffd700; font-weight:bold;">PUNYA PENGHASILAN SAMPAI TUA ITU TIDAK PASTI</p>
-    <p style="font-size:19px; margin-top:10px;">Sekarang mendapatkan penghasilan tetap.<br>Usia tua harus tetap berpenghasilan.</p>
-  </div>
+  <p style="text-align:center; font-size:19px;">
+    Sekarang mendapatkan penghasilan tetap.<br>
+    Usia tua harus tetap berpenghasilan.
+  </p>
 
-  <div class="section" style="background:#0b513b; padding:25px; border-radius:20px; margin:25px 0;">
+  <div class="section">
     <h2 style="color:#ffd700; text-align:center;">Pendekar3i • #DisabilitasPunyaKarya</h2>
-    <p>Saya Sugiarto Kurniawan. Kehilangan tangan kiri karena kecelakaan kerja tidak membuat saya menyerah. Justru saya bangkit dan membangun Nganggur Preneur Akademi.</p>
+    <p>
+      Saya Sugiarto Kurniawan. Kehilangan tangan kiri karena kecelakaan kerja 
+      tidak membuat saya menyerah. Justru saya bangkit dan membangun 
+      <strong>Nganggur Preneur Akademi</strong>.
+    </p>
   </div>
 
-  <!-- 3IREBORN -->
-  <div style="text-align:center; margin:25px 0;">
-    <img src="assets/3ireborn.png" alt="3IReborn" onerror="this.style.display='none';">
+  <div class="section">
+    <h2 style="color:#ffd700;">Visi Saya</h2>
+    <p>
+      Membantu para pensiunan, korban PHK, dan teman-teman usia tua memiliki 
+      penghasilan tetap melalui bisnis syariah 3IReborn.
+    </p>
   </div>
 
-  <div style="text-align:center; margin:30px 0;">
-    <a id="waBtn" href="#" style="background:#25D366; color:white; padding:18px 40px; border-radius:50px; font-size:20px; font-weight:bold; text-decoration:none; display:inline-block;">
-      💬 Hubungi Saya di WhatsApp
-    </a>
+  <div class="section center">
+    <h2 style="color:#ffd700;">Mau Tahu Caranya?</h2>
+    <a id="waBtn" class="btn">💬 Hubungi Saya di WhatsApp</a>
   </div>
 
-  <!-- FOTO PROFIL -->
-  <div style="text-align:center; margin:30px 0;">
-    <img src="assets/pakde.png" alt="Profile" style="width:130px; height:130px; border-radius:50%; border:5px solid #ffd700;" onerror="this.style.display='none';">
-  </div>
-
-  <!-- UMROH -->
-  <div style="text-align:center;">
-    <img src="assets/umroh.png" alt="Umroh Impian" onerror="this.style.display='none';">
+  <div class="center" style="margin-top:40px; opacity:0.9;">
+    <p><strong>Sugiarto Kurniawan</strong><br>
+    Pendekar3i • Founder Nganggur Preneur Akademi</p>
   </div>
 
 </div>
 
 <script>
-const wa = "6285214853131";
-const pesan = "Halo Kak Pendekar3i, saya tertarik dengan perjalanan dan program Anda 🙏";
+const wa = "6285218453131";   // Nomor yang benar
+
+const pesan = "Halo Kak Pendekar3i, saya tertarik dengan perjalanan dan program Anda. Mau tahu lebih lanjut 🙏";
+
 document.getElementById("waBtn").href = `https://wa.me/${wa}?text=${encodeURIComponent(pesan)}`;
 </script>
 </body>
